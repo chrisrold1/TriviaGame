@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>TriviaGames</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4">Trivia Trivia Trivial</h1>
+
+    </div>
+   <form id = "quiz" name="quiz">
+    <p class="questions">What is the capital of Chicago Illinois?</p>
+    <input id="textbox" type="text" name="question1">
+
+    <p class="questions">Who is the first black Contry to get their independence?</p>
+    <input type="radio" id="mc" name="question2" value="Jamaica"> Jamaica<br>
+    <input type="radio" id="mc" name="question2" value="Haiti"> Haiti<br>
+    <input type="radio" id="mc" name="question2" value="Guyana"> Guyana<br>
+
+    <p class="questions">Who is the first blak President of USA?</p>
+
+    <input type="radio" id="mc" name="question3" value="Bill Clinton"> Bill Clinton<br>
+    <input type="radio" id="mc" name="question3" value="Barack Obama">Barack Obama<br>
+    <input type="radio" id="mc" name="question3" value="Dwayne Rock Johnson"> Dwayne Rock Johnson<br>
+
+    <p class="questions">Which continent is located USA?</p>
+
+    <input type="radio" id="mc" name="question4" value="North America "> North America<br>
+    <input type="radio" id="mc" name="question4" value="South America">South America<br>
+    <input type="radio" id="mc" name="question4" value="Asisa"> Asia<br>
+
+    <p class="questions">Which year did Haiti get their Indepence?</p>
+
+    <input type="radio" id="mc" name="question5" value="1870"> 1870<br>
+    <input type="radio" id="mc" name="question5" value="1950">1950<br>
+    <input type="radio" id="mc" name="question5" value="1804"> 1804<br>
+
+    <input id="button" type="button" value="I'm finished!" onclick="check();">
+
+    </form>
+
+    <div id="after_submit">
+
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="picture">
+    </div>
+    
+    <script src="assets/javascript/trivia.js"></script>
+    </div>
+    
+</body>
+
+</html>
